@@ -1,0 +1,159 @@
+@charset "utf-8";
+html {
+	font-family: 'Roboto', sans-serif;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+}
+body {
+	/*min-width: 1280px;*/
+	margin: 0;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+}
+
+   TABLE {
+    width: 25em; /* Ширина таблицы */
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+   }
+   TD, TH {
+    padding: 0.5em; /* Поля вокруг содержимого таблицы */
+    border: 2px solid black; /* Параметры рамки */
+    text-align: right; /* Выравнивание по левому краю */
+   }
+   TH {
+    background: #b0e0e6; /* Цвет фона */
+    text-align: center;
+   }
+
+.editable{
+
+  cursor: pointer;
+}
+
+.cellEditing{
+}
+
+   /*============== SVG menu =====================*/
+   #menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: visible;
+}
+
+
+
+    .item .sector{transition:all .1s linear;fill:#fff;stroke:DarkTurquoise;cursor:pointer;outline:none;}
+
+    .item:hover .sector,.item:focus .sector{fill:#eee;}
+
+    .menu-trigger{fill:DarkTurquoise;pointer-events:auto;}
+
+    .menu-trigger:hover,.menu-trigger:focus{cursor:pointer;}symbol{overflow:visible;}
+
+    .menu-wrapper {
+    position: relative;
+    height: 0;
+    width: 250px;
+    padding-top: 50%; /* if the menu is in full circle mode. 50% if it is in semi-circle mode.*/
+}
+/*============================================*/
+
+.dimInput {
+  background-color: coral;
+  /*background-color: transparent;*/
+  /*border: 20px solid transparent;*/
+  /*opacity: 0.5;*/
+}
+.dimInput:hover{
+  background-color: white;
+border: 20px solid red;
+
+/*
+  -webkit-animation: cloudsfly 1s alternate-reverse ease-in-out infinite;
+     -moz-animation: cloudsfly 1s alternate-reverse ease-in-out infinite;
+          animation: cloudsfly 1s alternate-reverse ease-in-out infinite;*/
+/*}
+@keyframes cloudsfly {
+  0%   { -ms-transform: translateX(90vw);
+         -webkit-transform:translateX(90vw);
+         transform: translateX(90vw);
+         opacity: 0;  }
+  20%  { opacity: 0.01;}
+  50%  { opacity: 0.2; }
+  80%  { opacity: 0.01;}
+  100% { -ms-transform: translateX(-40vw);
+         -webkit-transform:translateX(-40vw);
+         transform: translateX(-40vw);
+         opacity: 0; }
+}*/
+}
+
+/*////////////////////////////
+//button two
+//////////////////////////*/
+.btn-2 {
+    letter-spacing: 0;
+}
+
+.btn-2:hover,
+.btn-2:active {
+  letter-spacing: 10px;
+}
+
+.btn-2:after,
+.btn-2:before {
+  backface-visibility: hidden;
+  border: 11px solid rgba(#fff, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn-2:hover:after,
+.btn-2:hover:before {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.btn-2:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+/*/////////////////////////*/
+
+/*/////////////////////////*/
+/*bootstrap modal animation */
+/*/////////////////////////*/
+.modal.fade .modal-dialog {
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
+    top: 200px;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.modal.fade.in .modal-dialog {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform: translate3d(0, -200px, 0);
+    transform: translate3d(0, -200px, 0);
+    opacity: 1;
+}
+/*/////////////////////////*/
